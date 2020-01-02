@@ -1,2 +1,2 @@
 # simplify-sequence
-[simplifysequence.pythonanywhere.com](simplifysequence.pythonanywhere.com)
+Creating various tools to help make the task of simplifying DNA sequences easier.
