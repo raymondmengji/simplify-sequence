@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+	margin-top:100px;
+	margin-left:10%;
+	margin-right:10%;
+	background-color: #ffffcc;
+	font-family: 'Open Sans', serif;
+}
+
+textarea {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	display: block;
+	outline: none;
+	border: none;
+	height: 25px;
+	line-height: 25px;
+	font-size: 16px;
+	padding: 0;
+	resize:none;
+}
+

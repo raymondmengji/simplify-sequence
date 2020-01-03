@@ -3,13 +3,20 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Simplify Sequence</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript">
+			//auto expand textarea
+			function adjust_textarea(h) {
+    			h.style.height = "20px";
+    			h.style.height = (h.scrollHeight)+"px";
+			}
+		</script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
  	</head>
  	<body>
 		<div>
 			<h2>Input Sequence</h2>
 			<form action="/hello" method="post">
-				Input Sequence: <textarea rows="4" cols="50" name="sequence"></textarea>
+				Input Sequence: <textarea rows="4" cols="50" name="sequence" onkeyup="adjust_textarea(this)"></textarea>
 				<br />
 				First Index: <input type="text" name="FirstIndex">
 				<br />
