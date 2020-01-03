@@ -16,7 +16,7 @@
 		<div>
 			<h2>Input Sequence</h2>
 			<form action="/hello" method="post">
-				Input Sequence: <textarea rows="4" cols="50" name="sequence" onkeyup="adjust_textarea(this)"></textarea>
+				Input Sequence: <textarea name="sequence" onkeyup="adjust_textarea(this)"></textarea>
 				<br />
 				First Index: <input type="text" name="FirstIndex">
 				<br />
@@ -29,9 +29,9 @@
 		<div>
 			<h2>Find Sub-Sequence</h2>
 			<form action="/find" method="post">
-				Input Sequence: <textarea rows="4" cols="50" name="sequence"></textarea>
+				Input Sequence: <textarea name="sequence"></textarea>
 				<br />
-			  	Sub-Sequence: <textarea rows="4" cols="50" name="sub_sequence"></textarea>
+			  	Sub-Sequence: <textarea name="sub_sequence"></textarea>
 			  	<br />
 			  	<input type="submit">
 			</form>
