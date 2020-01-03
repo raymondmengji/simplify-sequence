@@ -15,14 +15,27 @@
  	<body>
 		<div>
 			<h2>Input Sequence</h2>
-			<form action="/hello" method="post">
-				Input Sequence: <textarea name="sequence" onkeyup="adjust_textarea(this)"></textarea>
-				<br />
-				First Index: <input type="text" name="FirstIndex">
-				<br />
-				Second Index: <input type="text" name="SecondIndex">
-				<br />
-				<input type="submit">
+			<form action="/hello" method="post" class="form-style">
+				<ul>
+					<li>
+						<label for="sequence">Sequence</label>
+						<textarea name="sequence" onkeyup="adjust_textarea(this)"></textarea>
+						<span>Input your sequence here</span>
+					</li>
+					<li>
+						<label for="FirstIndex">First Index</label>
+						<input type="text" name="FirstIndex" maxlength="100">
+						<span>Enter your first index</span>
+					</li>
+					<li>
+						<label for="SecondIndex">Second Index</label>
+						<input type="text" name="SecondIndex" maxlength="100">
+						<span>Enter your second index</span>
+					</li>
+					<li>
+						<input type="submit" value="Output Result">
+					</li>
+				</ul>
 			</form>
 		</div>
 
