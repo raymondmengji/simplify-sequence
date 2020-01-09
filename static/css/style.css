@@ -7,6 +7,19 @@ body{
 	font-family: 'Open Sans', serif;
 }
 
+
+.form-box {
+	background-color: lightgrey;
+	margin-left: 10%
+	margin-right: 10%;
+	margin-bottom: 20px;
+	padding:5px;
+}
+
+.form-box h2{
+	text-align:center;
+}
+
 .form-style {
 	max-width: 400px;
 	margin:50px auto;

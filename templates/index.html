@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
  	</head>
  	<body>
-		<div>
+		<div class="form-box">
 			<h2>Input Sequence</h2>
 			<form action="/hello" method="post" class="form-style">
 				<ul>
@@ -39,14 +39,24 @@
 			</form>
 		</div>
 
-		<div>
+		<div class="form-box">
 			<h2>Find Sub-Sequence</h2>
-			<form action="/find" method="post">
-				Input Sequence: <textarea name="sequence"></textarea>
-				<br />
-			  	Sub-Sequence: <textarea name="sub_sequence"></textarea>
-			  	<br />
-			  	<input type="submit">
+			<form action="/find" method="post" class="form-style">
+				<ul>
+					<li>
+						<label for="sequence">Sequence</label>
+						<textarea name="sequence" onkeyup="adjust_textarea(this)"></textarea>
+						<span>Input your sequence here</span>
+					</li>
+					<li>
+						<label for="sub_sequence">Sub Sequence</label>
+						<textarea name="sub_sequence" onkeyup="adjust_textarea(this)"></textarea>
+						<span>Input your sub-sequence here</span>
+					</li>
+					<li>
+						<input type="submit" value="Output Result">
+					</li>
+				</ul>
 			</form>
 		</div>
  	</body>
